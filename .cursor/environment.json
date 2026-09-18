@@ -1,0 +1,4 @@
+{
+  "name": "chattyPT — skills & docs",
+  "install": "set -eu; missing=0; for t in git gh jq; do if ! command -v \"$t\" >/dev/null 2>&1; then echo \"missing required tool: $t\" >&2; missing=1; fi; done; [ \"$missing\" -eq 0 ] || { echo 'toolchain check failed' >&2; exit 1; }; echo 'toolchain OK: git, gh, jq present'"
+}
